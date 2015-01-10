@@ -1,0 +1,47 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.example.dexecon.myapplication.SplashActivity"
+        android:background="#ffa2ded0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="JUST"
+            android:id="@+id/my_text"
+            android:textColor="#ff002152"
+            android:textSize="70dp"
+            android:textAlignment="center"
+            android:layout_marginTop="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/my_text3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:text="BE"
+            android:id="@+id/my_text2"
+            android:textColor="#ffffffff"
+            android:textSize="70dp"
+            android:layout_alignTop="@+id/my_text"
+            android:layout_toEndOf="@+id/my_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Where you are"
+            android:textAlignment="center"
+            android:id="@+id/my_text3"
+            android:textColor="#ff002152"
+            android:textSize="40dp"
+            android:layout_below="@+id/my_text"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
