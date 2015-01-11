@@ -4,7 +4,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         tools:context="com.example.dexecon.myapplication.SplashActivity"
-        android:background="#ffa2ded0">
+        android:background="#a2ded0">
 
         <TextView
             android:layout_width="wrap_content"
@@ -15,9 +15,9 @@
             android:textColor="#ff002152"
             android:textSize="70dp"
             android:textAlignment="center"
-            android:layout_marginTop="120dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/my_text3"/>
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/band"
+            android:layout_alignStart="@+id/my_text3" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,13 +35,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Where you are"
+            android:text="where you are"
             android:textAlignment="center"
             android:id="@+id/my_text3"
             android:textColor="#ff002152"
             android:textSize="40dp"
             android:layout_below="@+id/my_text"
             android:layout_centerHorizontal="true"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/hands"
+            android:scaleType="fitXY"
+            android:contentDescription="hands"
+            android:layout_alignStart="@+id/my_text3"
+            android:layout_alignEnd="@+id/my_text2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+
+
+            android:layout_below="@+id/my_text3"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/band"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="#71cfb9"
+            android:height="50dp" />
 
 
     </RelativeLayout>

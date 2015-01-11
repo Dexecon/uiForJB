@@ -1,17 +1,35 @@
 package com.example.dexecon.myapplication;
 
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    TextView a;
+    TextView b;
+    TextView c;
+    Button d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        a=(TextView)findViewById(R.id.phoneaway);
+        b=(TextView)findViewById(R.id.away);
+        c=(TextView)findViewById(R.id.question);
+        d=(Button)findViewById(R.id.button);
+        Typeface myCustomFont= Typeface.createFromAsset(getAssets(),"Fox.ttf");
+        a.setTypeface(myCustomFont);
+        b.setTypeface(myCustomFont);
+        c.setTypeface(myCustomFont);
+        Typeface myCustomFon2= Typeface.createFromAsset(getAssets(), "Lobster.otf");
+        d.setTypeface(myCustomFon2);
     }
 
 
@@ -35,5 +53,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void yes (View view){
+        Intent intent= new Intent(this, Slider.class );
+        startActivity(intent);
     }
 }

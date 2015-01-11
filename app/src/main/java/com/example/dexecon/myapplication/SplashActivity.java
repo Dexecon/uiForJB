@@ -28,8 +28,7 @@ public class SplashActivity extends Activity {
         J.setTypeface(myCustomFont);
         B.setTypeface(myCustomFont);
         W.setTypeface(myCustomFont);
-
-        int myTimer = 3000;
+        int myTimer = 4000;
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -39,6 +38,8 @@ public class SplashActivity extends Activity {
                 finish(); // close this activity
             }
         }, myTimer);
+
+
     }
 
 
