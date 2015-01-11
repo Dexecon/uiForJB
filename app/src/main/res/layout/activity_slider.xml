@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_page_layout"
+    android:layout_width="match_parent"
+    tools:context=".Slider"
+    android:layout_height="match_parent"
+    android:background="#1e3034" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="260dp"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/after_slide_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/red"
+            android:text=""
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Oh, so your phone is more important?"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="50dp"
+       />
+
+    <SeekBar
+        android:id="@+id/myseek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green"
+        android:clickable="false"
+        android:max="100"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:progressDrawable="@android:color/transparent"
+        android:text="Do Not Touch"
+        android:thumb="@drawable/slider_icon"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/slider_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="... slide to use phone"
+        android:textColor="#fff"
+        android:textSize="28dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignTop="@+id/myseek"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+</RelativeLayout>
