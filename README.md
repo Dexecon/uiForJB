@@ -1,2 +1,2 @@
--Hirata, create a branch and start working on this version of the UI code
--Aishni to get seperate files for dark strips from Frame 1 & 2
+Khalid working on button to lock screen
+Yoshi working on slider
